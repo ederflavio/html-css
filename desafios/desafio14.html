@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela Desafio 14</title>
+    <title>Desafio 14</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
         table {
+            width: 500px;
+            height: 300px;
             border-collapse: collapse;
+
         }
         caption {
             font-size: 1.3em;
@@ -25,14 +28,10 @@
             text-align: center; 
         }
 
-        tbody tr > th {
+        tfoot > tr > th {
             text-align: left;
         }
-
-        tfoot tr > th {
-            text-align: left;
-        }
-        
+ 
         thead, tfoot > tr:nth-child(1n) {
             background-color: gray;
             color: white;
@@ -42,15 +41,24 @@
             background-color: gray;
             color: white;
         }
+        td.esq {
+            text-align: left;
+        }
+
+
+
 
     </style>
 
 </head>
 <body>
-    <h1>Tabela Desafio 14</h1>
+    <h1>Desafio 14</h1>
     <table>
+        <colgroup>
+            <col class="grupo" span="2">
+        </colgroup>
      
-        <Caption>Desafio 14</Caption>
+        <Caption>Tabela Desafio 14</Caption>
         <thead>
             <tr>
                 <th rowspan="2" scope="rowgroup">Área</th>
@@ -66,42 +74,42 @@
         <tbody>
             <tr>
                 <th rowspan="4" scope="colgroup">Exatas</th>
-                <th>Matemática</th>
+                <td class="esq">Matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
             <tr>
-                <th>Fisíca</th>
+                <td class="esq">Fisíca</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
             <tr>
-                <th>Química</th>
+                <td class="esq">Química</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
             <tr>
-                <th>Biologia</th>
+                <td class="esq">Biologia</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" scope="colgroup">Média de Exatas</th>
+                <th colspan="4" scope="colgroup" style="text-align: left;">Média de Exatas</th>
                 <td><strong>0.0</strong></td>
             </tr>
             <tr>
                 <th rowspan="2" scope="colgroup">Humanas</th>
-                <th>História</th>
+                <td class="esq">História</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
             <tr>
-                <th>Geográfica</th>
+                <td class="esq">Geográfica</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -115,7 +123,6 @@
                 <td><strong>0.0</strong></td>
             </tr>
         </tfoot>
-    </table>
-    
+    </table>  
 </body>
 </html>
