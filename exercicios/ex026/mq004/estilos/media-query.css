@@ -11,7 +11,12 @@ Desktop: 992px até 1200px
 Grandes telas: acima de 1200px 
 */
 
-@media print {
+@media print { /*IMPRESSÃO*/
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
     body {
         background-image: url(../imagens/back-print.jpg); /*desnecessário*/
     }
@@ -27,7 +32,6 @@ Grandes telas: acima de 1200px
     }
 
     main h1 {
-        font-family: 'Courier New', Courier, monospace;
         text-shadow: none;
         color: black;
     }
