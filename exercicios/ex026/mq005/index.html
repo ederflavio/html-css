@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--https://material.io/ pegar ícone menu hamburguer-->
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span> <!-- chamada de método javascript-->
         <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
@@ -32,6 +33,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias pariatur quas eos necessitatibus, eaque, in quam totam odit qui exercitationem, nulla temporibus at eligendi voluptate doloremque architecto. Expedita, quia itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laboriosam et rem vitae quos? Minus suscipit voluptate error voluptatibus pariatur. Maiores natus est reprehenderit similique incidunt minima. Temporibus, dolores accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam blanditiis pariatur, enim voluptates qui quidem perferendis, corporis laboriosam accusantium necessitatibus aut numquam a architecto nihil quis, vero officiis quia ipsum?</p>
         </article>
     </main>
+    <!--implementação do método javascript-->
     <script>
         function clickMenu() {
             if (itens.style.display == 'block') {
